@@ -29,7 +29,7 @@ function multiplication() { calculate('mul'); }
 function division() { calculate('div'); }
 function power() { calculate('pow'); }
 
-function clear() {
+function clearAll() {
     document.getElementById("first-number").value = "";
     document.getElementById("second-number").value = "";
     document.getElementById("output").innerHTML = "";
