@@ -1,0 +1,103 @@
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+#page-wrapper{
+    width: 100vw;
+    background-color: burlywood;
+    margin: 0 auto;
+}
+
+/* #nav-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+/*
+main{ */
+    /* at least 100vh */
+    /* height: 100vh;
+    text-align: center;
+    width: 70%;
+}
+
+nav{
+    width: 30%;
+    background-color: aquamarine;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+header, footer{
+    background-color: cornflowerblue;
+} */
+
+
+/* 1. Mobile First Styles (Screens < 750px) */
+
+#nav-main {
+    display: flex;
+    flex-direction: column; /* Stack nav on top of main */
+    width: 100%;
+}
+
+nav {
+    width: 100%; /* Requirement: 100% width of parent */
+    background-color: aquamarine;
+}
+
+nav ul {
+    padding: 10px 0;
+    list-style: none;
+    display: flex;        /* Requirement: Appear horizontal */
+    flex-direction: row;  
+    justify-content: space-around; /* Distributes links evenly */
+    flex-wrap: wrap;      /* Allows links to wrap if screen is very narrow */
+}
+
+main {
+    width: 100%; 
+    height: 100vh;
+    text-align: center;
+}
+
+#name-header {
+    text-align: center;
+}
+
+/* 2. Desktop Styles (Screens > 750px) */
+
+@media screen and (min-width: 750px) {
+    #nav-main {
+        flex-direction: row; /* Nav and Main sit side-by-side */
+    }
+
+    nav {
+        width: 30%; /* Requirement: Not exceed 30% of parent */
+    }
+
+    nav ul {
+        flex-direction: column; /* Requirement: Must be vertical on large screens */
+        padding-left: 10px;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    #name-header {
+        text-align: left;
+    }   
+
+}
+
+@media screen and (min-width: 1000px) {
+    #page-wrapper{
+        width: 70%;
+    }
+}
