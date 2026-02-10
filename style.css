@@ -106,9 +106,6 @@ main {
     padding-top: 5px;
 }
 
-#skill-container{
-    margin: 100px;
-}
 
 .img{
     max-width: 100%;
@@ -126,6 +123,7 @@ main h1 {
 button{
     background-color: #34495e;
     color: white;
+    margin-top: 10px;
 }
 button:hover {
     background-color: #2980b9;
