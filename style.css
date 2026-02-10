@@ -10,59 +10,36 @@
     margin: 0 auto;
 }
 
-/* #nav-main{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-} */
-/*
-main{ */
-    /* at least 100vh */
-    /* height: 100vh;
-    text-align: center;
-    width: 70%;
-}
-
-nav{
-    width: 30%;
-    background-color: aquamarine;
-}
-
-nav ul{
-    padding-left: 0;
-    list-style: none;
-}
-
 header, footer{
     background-color: cornflowerblue;
-} */
+} 
 
 
-/* 1. Mobile First Styles (Screens < 750px) */
+/*Mobile First Styles (Screens < 750px) */
 
 #nav-main {
     display: flex;
-    flex-direction: column; /* Stack nav on top of main */
+    flex-direction: column;
     width: 100%;
 }
 
 nav {
-    width: 100%; /* Requirement: 100% width of parent */
+    width: 100%; 
     background-color: aquamarine;
 }
 
 nav ul {
     padding: 10px 0;
     list-style: none;
-    display: flex;        /* Requirement: Appear horizontal */
+    display: flex;
     flex-direction: row;  
-    justify-content: space-around; /* Distributes links evenly */
-    flex-wrap: wrap;      /* Allows links to wrap if screen is very narrow */
+    justify-content: space-around; 
+    flex-wrap: wrap;
 }
 
 main {
     width: 100%; 
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -70,19 +47,19 @@ main {
     text-align: center;
 }
 
-/* 2. Desktop Styles (Screens > 750px) */
+/*Desktop Styles (Screens > 750px) */
 
 @media screen and (min-width: 750px) {
     #nav-main {
-        flex-direction: row; /* Nav and Main sit side-by-side */
+        flex-direction: row;
     }
 
     nav {
-        width: 30%; /* Requirement: Not exceed 30% of parent */
+        width: 30%;
     }
 
     nav ul {
-        flex-direction: column; /* Requirement: Must be vertical on large screens */
+        flex-direction: column;
         padding-left: 10px;
     }
 
@@ -100,4 +77,31 @@ main {
     #page-wrapper{
         width: 70%;
     }
+}
+
+.entry {
+    text-align: left;
+    margin-bottom: 30px; 
+    padding: 0 20px;
+}
+
+.short-summary{
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#project{
+    padding-top: 500px;
+}
+
+#skill-container{
+    margin: 100px;
+}
+
+.img{
+    max-width: 100%;
+}
+
+main h1 {
+    margin-bottom: 20px; 
 }
