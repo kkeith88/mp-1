@@ -44,7 +44,7 @@ nav a {
     display: block;
     color: #ecf0f1;
     padding: 15px 10px; 
-    font-size: 18px;        
+    font-size: calc(15px + .5vw);       
 }
 
 main {
@@ -93,12 +93,12 @@ main {
 .entry {
     text-align: left;
     margin-bottom: 30px; 
-    padding:20px;
+    padding: 20px;
     background-color: white;
 }
 
 .short-summary{
-    font-size: 15px;
+    font-size: calc(15px + .5vw);
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -121,4 +121,16 @@ main h1 {
 #calculator-section{
     margin-top: 50px;
     margin-bottom: 100px;
+}
+
+button{
+    background-color: #34495e;
+    color: white;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+#calculator-header{
+    margin-bottom: 20px;
 }
